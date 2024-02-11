@@ -1,7 +1,8 @@
+import Navbar from "./components/Navbar";
 import Test from "./components/Test";
 
 function App () {
-  return ( <div><Test/></div>);
+  return ( <><Navbar/><Test/></> );
 }
 
 export default App;
