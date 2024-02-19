@@ -1,5 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 function Book() {
-  return <h1>This is Book page</h1>;
+  const { t } = useTranslation();
+
+  //i18n.changeLanguage("en");
+
+  return <h1> {t("title")}</h1>;
 }
 
 export default Book;

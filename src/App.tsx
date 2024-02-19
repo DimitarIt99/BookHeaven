@@ -5,6 +5,8 @@ import Book from "./components/book/Book";
 import BookList from "./components/book/BookList";
 import Author from "./components/author/Author";
 
+import "./i18n";
+
 function App() {
   return (
     <>
