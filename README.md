@@ -35,3 +35,4 @@ Using in this project so far:
 2. React -- Front end tool helping me quickly create a full new App
 3. Bootstarp -- Front end tool. Using css templates
 4. react-i18next -- Makes wokring with multiple languages easier
+5. fontawesome -- Makes working with icons easier

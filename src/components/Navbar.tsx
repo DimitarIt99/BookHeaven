@@ -1,5 +1,17 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouseChimney,
+  faBookSkull,
+  faHeadSideVirus,
+} from "@fortawesome/free-solid-svg-icons";
+
 function Navbar() {
   // This is just a dummy test for navbar. TODO Implement me later
+
+  const home_icon = <FontAwesomeIcon icon={faHouseChimney} />;
+  const book_icon = <FontAwesomeIcon icon={faBookSkull} />;
+  const author_icon = <FontAwesomeIcon icon={faHeadSideVirus} />;
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -20,17 +32,17 @@ function Navbar() {
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/">
-                Home
+                Home {home_icon}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/author/">
-                Authors
+                Authors {author_icon}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/book_list/">
-                BooksList
+                BooksList {book_icon}
               </a>
             </li>
           </ul>
