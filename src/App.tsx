@@ -1,7 +1,6 @@
 import { Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { GeneralRouting } from "./routes/GeneralRouting";
-
+import MainRoutes from "./routes/MainRoutes";
 import "./i18n";
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <GeneralRouting />
+        <MainRoutes />
       </Routes>
     </>
   );
