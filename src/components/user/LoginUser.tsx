@@ -10,25 +10,23 @@ function LoginUser() {
           </h1>
         </div>
         <form>
-          <div className="mb-4">
-            <label htmlFor="inputEmail3" className="col-sm-4 col-form-label">
-              Email
-            </label>
-            <div className="mb-4">
-              <input type="email" className="form-control" id="inputEmail3" />
-            </div>
+          <div className="mb-4 form-floating">
+            <input
+              type="email"
+              className="form-control"
+              id="loginEmail"
+              placeholder="Email"
+            />
+            <label htmlFor="loginEmail">Email</label>
           </div>
-          <div className="md-4">
-            <label htmlFor="inputPassword3" className="col-sm-4 col-form-label">
-              Password
-            </label>
-            <div className="md-4">
-              <input
-                type="password"
-                className="form-control"
-                id="inputPassword3"
-              />
-            </div>
+          <div className="md-4 form-floating">
+            <input
+              type="password"
+              className="form-control"
+              id="loginPassword"
+              placeholder="Password"
+            />
+            <label htmlFor="loginPassword">Password</label>
           </div>
           <button type="submit" className="btn btn-primary">
             Login
