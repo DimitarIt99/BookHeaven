@@ -50,7 +50,9 @@ function Navbar() {
         <div className="d-flex">
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <a href="/user/login">{login_icon} Login</a>
+              <a className="btn btn-secondary" href="/user/login">
+                {login_icon} Login
+              </a>
             </li>
           </ul>
         </div>
