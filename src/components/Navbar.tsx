@@ -3,14 +3,14 @@ import {
   faHouseChimney,
   faBookSkull,
   faHeadSideVirus,
+  faRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
-  // This is just a dummy test for navbar. TODO Implement me later
-
   const home_icon = <FontAwesomeIcon icon={faHouseChimney} />;
   const book_icon = <FontAwesomeIcon icon={faBookSkull} />;
   const author_icon = <FontAwesomeIcon icon={faHeadSideVirus} />;
+  const login_icon = <FontAwesomeIcon icon={faRightToBracket} />;
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -44,6 +44,13 @@ function Navbar() {
               <a className="nav-link" href="/book/list/">
                 BooksList {book_icon}
               </a>
+            </li>
+          </ul>
+        </div>
+        <div className="d-flex">
+          <ul className="nav justify-content-center">
+            <li className="nav-item">
+              <a href="/user/login">{login_icon} Login</a>
             </li>
           </ul>
         </div>

@@ -11,7 +11,7 @@ export function MainRoutes() {
     <Routes>
       <Route path="book/*" element={<BookRoutes />} />
       <Route path="author/*" element={<AuthorRoutes />} />
-      <Route path="login/*" element={<UserRoutes />} />
+      <Route path="user/*" element={<UserRoutes />} />
       <Route path="/" element={<Home />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
