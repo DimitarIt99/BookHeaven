@@ -41,7 +41,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/book_list/">
+              <a className="nav-link" href="/book/list/">
                 BooksList {book_icon}
               </a>
             </li>

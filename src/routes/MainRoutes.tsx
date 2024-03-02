@@ -1,21 +1,19 @@
 import { Route, Routes } from "react-router-dom";
 
-import AuthorRoutes from "./AuthorRoutes";
-import BookRoutes from "./BookRoutes";
-import UserRoutes from "./UserRoutes";
+import { AuthorRoutes } from "./AuthorRoutes";
+import { BookRoutes } from "./BookRoutes";
+import { UserRoutes } from "./UserRoutes";
 import Home from "../components/Home";
 import NotFound from "../components/general/NotFound";
 
-function MainRoutes() {
+export function MainRoutes() {
   return (
     <Routes>
-      <AuthorRoutes />
-      <BookRoutes />
-      <UserRoutes />
-      <Route path="/" element={<Home />}></Route>
-      <Route path="*" element={<NotFound />}></Route>
+      <Route path="book/*" element={<BookRoutes />} />
+      <Route path="author/*" element={<AuthorRoutes />} />
+      <Route path="login/*" element={<UserRoutes />} />
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
-
-export default MainRoutes;
