@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import { MainRoutes } from "./routes/MainRoutes";
-import "./i18n";
+import "./utils/i18n";
 
 function App() {
   return (

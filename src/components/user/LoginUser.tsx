@@ -1,9 +1,8 @@
 import { GiAngelWings } from "react-icons/gi";
-
 function LoginUser() {
   return (
     <div className="container min-vh-100 d-flex justify-content-center align-items-center">
-      <div className="rounded-pill">
+      <div className="loginForm">
         <div>
           <h1>
             Book Heaven <GiAngelWings />
@@ -28,7 +27,7 @@ function LoginUser() {
             />
             <label htmlFor="loginPassword">Password</label>
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary m-1">
             Login
           </button>
         </form>
