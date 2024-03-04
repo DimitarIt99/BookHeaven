@@ -1,5 +1,11 @@
 {
   "title": "Test title",
   "Name": "Test Name",
-  "LoginForm": {}
+  "project_title": "Book Heaven",
+  "login": "Login",
+  "home": "Home",
+  "authors": "Authors",
+  "book_list": "Books List",
+  "email": "Email",
+  "password": "Password"
 }

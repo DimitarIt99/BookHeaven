@@ -1,11 +1,15 @@
 import { GiAngelWings } from "react-icons/gi";
+import { useTranslation } from "react-i18next";
+
 function LoginUser() {
+  const { t } = useTranslation();
+
   return (
     <div className="container min-vh-100 d-flex justify-content-center align-items-center">
       <div className="loginForm">
         <div>
           <h1>
-            Book Heaven <GiAngelWings />
+            {t("project_title")} <GiAngelWings />
           </h1>
         </div>
         <form>
@@ -14,21 +18,21 @@ function LoginUser() {
               type="email"
               className="form-control"
               id="loginEmail"
-              placeholder="Email"
+              placeholder={t("email")}
             />
-            <label htmlFor="loginEmail">Email</label>
+            <label htmlFor="loginEmail">{t("email")}</label>
           </div>
           <div className="md-4 form-floating">
             <input
               type="password"
               className="form-control"
               id="loginPassword"
-              placeholder="Password"
+              placeholder={t("password")}
             />
-            <label htmlFor="loginPassword">Password</label>
+            <label htmlFor="loginPassword">{t("password")}</label>
           </div>
-          <button type="submit" className="btn btn-primary m-1">
-            Login
+          <button type="submit" className="btn btn-secondary m-1">
+            {t("login")}
           </button>
         </form>
       </div>
