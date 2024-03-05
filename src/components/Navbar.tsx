@@ -1,22 +1,27 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
 import {
   faHouseChimney,
   faBookSkull,
   faHeadSideVirus,
+  faRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Navbar() {
-  // This is just a dummy test for navbar. TODO Implement me later
+import { GiAngelWings } from "react-icons/gi";
 
+function Navbar() {
   const home_icon = <FontAwesomeIcon icon={faHouseChimney} />;
   const book_icon = <FontAwesomeIcon icon={faBookSkull} />;
   const author_icon = <FontAwesomeIcon icon={faHeadSideVirus} />;
+  const login_icon = <FontAwesomeIcon icon={faRightToBracket} />;
+
+  const { t } = useTranslation();
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          BookHeaven
+          {t("project_title")} <GiAngelWings />
         </a>
         <button
           className="navbar-toggler"
@@ -32,17 +37,26 @@ function Navbar() {
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/">
-                Home {home_icon}
+                {t("home")} {home_icon}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/author/">
-                Authors {author_icon}
+                {t("authors")} {author_icon}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/book_list/">
-                BooksList {book_icon}
+              <a className="nav-link" href="/book/list/">
+                {t("book_list")} {book_icon}
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="d-flex">
+          <ul className="nav justify-content-center">
+            <li className="nav-item">
+              <a className="btn btn-secondary" href="/user/login">
+                {login_icon} {t("login")}
               </a>
             </li>
           </ul>

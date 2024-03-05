@@ -1,4 +1,11 @@
 {
   "title": "Test title",
-  "Name": "Test Name"
+  "Name": "Test Name",
+  "project_title": "Book Heaven",
+  "login": "Login",
+  "home": "Home",
+  "authors": "Authors",
+  "book_list": "Books List",
+  "email": "Email",
+  "password": "Password"
 }
