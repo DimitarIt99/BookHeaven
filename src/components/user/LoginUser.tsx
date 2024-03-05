@@ -7,11 +7,11 @@ function LoginUser() {
   return (
     <div className="container min-vh-100 d-flex justify-content-center align-items-center">
       <div className="loginForm">
-        <div>
+        <>
           <h1>
             {t("project_title")} <GiAngelWings />
           </h1>
-        </div>
+        </>
         <form>
           <div className="mb-4 form-floating">
             <input

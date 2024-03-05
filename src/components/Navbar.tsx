@@ -7,6 +7,8 @@ import {
   faRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { GiAngelWings } from "react-icons/gi";
+
 function Navbar() {
   const home_icon = <FontAwesomeIcon icon={faHouseChimney} />;
   const book_icon = <FontAwesomeIcon icon={faBookSkull} />;
@@ -19,7 +21,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          {t("project_title")}
+          {t("project_title")} <GiAngelWings />
         </a>
         <button
           className="navbar-toggler"
